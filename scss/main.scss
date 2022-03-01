@@ -11,7 +11,8 @@ html, body {
 }
 .main {
     @include center;
-    width: 90vw;
+    max-width: 600px;
+    margin-inline: 1em;
     height: auto;
     background: $Neutral-Grayish-Blue;
     border-radius: .7em;

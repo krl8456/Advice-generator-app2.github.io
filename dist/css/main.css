@@ -16,7 +16,8 @@ html, body {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  width: 90vw;
+  max-width: 600px;
+  margin-inline: 1em;
   height: auto;
   background: #4e5d73;
   border-radius: .7em;
