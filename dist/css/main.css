@@ -1,1 +1,77 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html, body, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+  font: 28px "Manrope", sans-serif;
+}
+
+html, body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #323a49;
+  height: 100vh;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 90vw;
+  height: auto;
+  background: #4e5d73;
+  border-radius: .7em;
+  color: #cee3e9;
+  position: relative;
+}
+
+.main .header {
+  color: #52ffa8;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 3em;
+  font-size: .5em;
+  letter-spacing: .2em;
+  margin-bottom: -1.3em;
+}
+
+.main .advice {
+  color: #cee3e9;
+  padding: 2em;
+  font-size: clamp(0.7em, 5vw, 1em);
+  font-weight: 800;
+}
+
+.main .pattern-divider-mobile {
+  width: 90%;
+  margin-bottom: 3em;
+  -webkit-filter: brightness(150%);
+          filter: brightness(150%);
+}
+
+.button {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  bottom: -1.5em;
+  background-color: #52ffa8;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0px 0px 30px 0px #52ffa8;
+          box-shadow: 0px 0px 30px 0px #52ffa8;
+}
+
+.button .icon-dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 40%;
+}
+/*# sourceMappingURL=main.css.map */

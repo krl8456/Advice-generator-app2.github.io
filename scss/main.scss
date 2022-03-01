@@ -1,0 +1,72 @@
+@import './resets', './variables', './centering';
+html, body, h1, h2, h3, h4 {
+    @include reset;
+    font: $Font-Size 'Manrope', sans-serif;
+}
+html, body {
+    @include center;
+    background: $Neutral-Dark-Grayish-Blue;
+    height: 100vh;
+    // overflow-y: hidden;
+}
+.main {
+    @include center;
+    width: 90vw;
+    height: auto;
+    background: $Neutral-Grayish-Blue;
+    border-radius: .7em;
+    color: $Primary-Light-Cyan;
+    position: relative;
+    .header {
+        color: $Primary-Neon-Green;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 3em;
+        font-size: .5em;
+        letter-spacing: .2em;
+        margin-bottom: -1.3em;
+    }
+    .advice {
+        // position: absolute;
+        // bottom: 50%;
+        color: $Primary-Light-Cyan;
+        padding: 2em;
+        font-size: clamp(0.7em, 5vw, 1em);
+        font-weight: 800;
+    }
+    .pattern-divider-mobile {
+        // position: absolute;
+        width: 90%;
+        margin-bottom: 3em;
+        filter: brightness(150%);
+    }
+}
+.button {
+    $diameter: 3em;
+    position: absolute;
+    width: $diameter;
+    height: $diameter;
+    // left:50%;
+    bottom: -$diameter/2;
+    // transform:translate(0%, -10%);
+    background-color: $Primary-Neon-Green;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    &:hover {
+        box-shadow: 0px 0px 30px 0px $Primary-Neon-Green;
+    }
+    .icon-dice {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+    }
+}
+
+
+    
+    
+
